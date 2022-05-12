@@ -1,4 +1,4 @@
-class HandbagController < ActionController::Base
+class Api::V1::HandbagController < ApplicationController
   def index
     @handbags = Handbag.all
     if @handbags
